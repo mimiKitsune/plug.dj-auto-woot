@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "plug.dj auto-vote",
+  "description": "Automatically 'woots' plug.dj tracks",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": ["http://plug.dj/*"],
+      "js": ["jquery.js", "myscript.js"]
+    }
+  ],
+
+  "page_action": {
+  }
+
+  // "background": { "scripts": ["background.js"] }
+
+}
