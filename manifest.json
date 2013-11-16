@@ -13,8 +13,18 @@
   ],
 
   "page_action": {
-  }
+  },
 
-  // "background": { "scripts": ["background.js"] }
+  "permissions" : [
+      "tabs"
+  ],
+
+  "page_action": {
+    "default_icon": {                    // optional
+      "19": "favicon.png"
+    }
+  },
+
+   "background": { "scripts": ["background.js"] }
 
 }
