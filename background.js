@@ -2,7 +2,7 @@ var active = false;
 var listener;
 
 chrome.tabs.onUpdated.addListener(function(tabID, changeInfo, tab) {
-	if (tab.url.indexOf("plug.dj" > -1)) {
+	if (tab.url.indexOf("plug.dj") > -1) {
 		chrome.pageAction.show(tabID);
 	}
 })
